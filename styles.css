@@ -1,1 +1,66 @@
-/*  your css code here. If applicable */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #7257ed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 250px;
+    height: 50px;
+    background-color: white;
+}
+
+.input {
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: transparent;
+}
+
+.btn {
+    position: absolute;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn svg {
+    width: 26px;
+    height: 26px;
+    fill: none;
+    stroke: black;
+    stroke-width: 3;
+    stroke-linecap: round;
+}
+
+.search.active .input {
+    width: 200px;
+}
+
+.search.active {
+    width: 300px;
+}
+
+.search.active .btn {
+    background-color: white;
+}
